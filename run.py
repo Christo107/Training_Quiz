@@ -52,8 +52,7 @@ def start_quiz():
     """
     name = input("Hi trainee, please enter your name and hit enter: ")
     if name == "":
-        print("A name is required to take the quiz")
-        name = input("Please enter your name and hit enter: ")
+        start_quiz()
     else:
         print(f"Welcome to the post training quiz {name}")
 
