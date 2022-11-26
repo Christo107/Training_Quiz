@@ -73,7 +73,8 @@ def start_quiz():
         print("Please select either y or n.")
 
 
-# run_quiz function based on project by Leah Fisher https://github.com/cornishcoder1/Food_of_Japan_Quiz
+# run_quiz function based on project by Leah Fisher
+# https://github.com/cornishcoder1/Food_of_Japan_Quiz
 def run_quiz(data):
     """
     Loops through the questions and answers in the quiz data dictionary
@@ -96,13 +97,18 @@ def run_quiz(data):
         if user_answer == entry['correct_answer']:
             print(f"That's correct {name}! Well done\n")
             score = score + 1
-            print(f"Your score: {score}\n")
+            print(f"Your score: {score}")
+            print("---------------------------------------")
         elif user_answer != entry['correct_answer']:
-            print(f"Sorry {name}, that's incorrect. \nThe correct answer was {correct_answer}.\n")
+            print(f"Sorry {name}, that's incorrect.\n")
+            print(f"The correct answer was {correct_answer}.")
+            print("---------------------------------------")
 
     print(f"Well done for completing the training quiz, {name}.")
     print(f"Your total score was {score} points.\n")
     print("Thank you and have a nice day.")
+
+    print(f"{name}{score}")
 
 
 def export_results(data):
