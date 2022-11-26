@@ -31,12 +31,14 @@ quiz_data = [
                 "b": "Undergraduate Degree Level 7",
                 "c": "Leaving Certificate Level 4"},
     "correct_answer": "a"},
-    {"question": "Which of these levels is not part of the Undergraduate levels?",
+    {"question": "Which of these levels is not part of the Undergraduate\
+    levels?",
     "answers": {"a": "Level 8 Higher Diploma",
                 "b": "Level 6 Higher Certificate",
                 "c": "Level 7 Ordinary Bachelor Degree"},
     "correct_answer": "a"},
-    {"question": "Which of these colleges is not an approved college for grant funding?",
+    {"question": "Which of these colleges is not an approved college\
+         for grant funding?",
     "answers": {"a": "University College Dublin",
                 "b": "Trinity College",
                 "c": "Dublin Business School"},
@@ -44,6 +46,7 @@ quiz_data = [
 ]
 
 score = 0
+
 
 def start_quiz():
     """
@@ -56,16 +59,22 @@ def start_quiz():
         start_quiz()
     else:
         print(f"Welcome to the post training quiz {name}")
-        print("The quiz consists of ten questions to test your knowledge\nof the training module that was delivered to you recently.\n")
-        print("The questions are in multiple choice format with options a, b and c.\n")
-        print("When prompted, please enter you answer a, b or c and hit the enter key.\n")
+        print("The quiz consists of ten questions to test your knowledge\
+            of the training module that was delivered to you recently.\n")
+        print("The questions are in multiple choice format with\
+            options a, b and c.\n")
+        print("When prompted, please enter you answer a, b or c\
+            and hit the enter key.\n")
 
     begin_quiz = input(f"Are you ready to begin, {name}? (y/n): ")
 
-    if begin_quiz.lower == "y":
+    if begin_quiz.lower() == "y":
         print("Okay, let's start. Good luck!")
-    elif begin_quiz.lower == "n":
-        print("This quiz is mandatory for all trainees. Please complete it before your assigned deadline.")
+    elif begin_quiz.lower() == "n":
+        print("This quiz is mandatory for all trainees. Please complete it\
+        before your assigned deadline.")
+    else:
+        print("Please select either y or n.")
 
 
 start_quiz()
