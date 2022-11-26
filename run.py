@@ -113,3 +113,4 @@ in order for the trainer to evaluate each person's progress
 
 start_quiz()
 run_quiz(quiz_data)
+export_results()
