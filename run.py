@@ -45,14 +45,15 @@ quiz_data = [
     "correct_answer": "c"},
 ]
 
-name = ""
 
 def start_quiz():
     """
     Beginning of quiz, includes welcome message, gets trainee's name and
     shows instructions for quiz
     """
+    global name
     name = input("Hi trainee, please enter your name and hit enter: ")
+
     if name == "":
         print("A name is required to take the quiz")
         start_quiz()
@@ -65,7 +66,7 @@ def start_quiz():
         print("When prompted, please enter you answer a, b or c\
             and hit the enter key.\n")
 
-    begin_quiz = input(f"Are you ready to begin, {name}? (y/n): ")
+    begin_quiz = input(f"Are you ready to begin, {name}? (y/n): \n")
 
     if begin_quiz.lower() == "y":
         print("Okay, let's start. Good luck!\n")
@@ -82,22 +83,28 @@ def run_quiz(data):
     Loops through the questions and answers in the quiz data dictionary
     """
     score = 0
-    
+
     for entry in quiz_data:
-        # question_text = question.get("question")
-        # print(question_text)
+        user_answer = ""
+        correct_answer = entry['correct_answer']
 
-        for key, value in entry['answers'].items():
-            print(f"{key}: {value}")
+        while user_answer not in ['a', 'b', 'c']:
+            print(f"{entry['question']}\n")
 
-        user_answer = input("Answer: ")
-        user_answer = user_answer.lower()
+            for key, value in entry['answers'].items():
+                print(f"{key}: {value}")
+
+            user_answer = input("Answer: \n")
+            user_answer = user_answer.lower()
 
         if user_answer == entry['correct_answer']:
-            print(f"That's correct {name}! Well done")
-            score = score += 1
+            print(f"That's correct {name}! Well done\n")
+            score = score + 1
+            print(f"Your score: {score}\n")
         elif user_answer != entry['correct_answer']:
-            print(f"Sorry {name}, that's incorrect. The correct answer was {correct_answer}.")
+            print(f"Sorry {name}, that's incorrect. The correct answer was {correct_answer, value}.\n")
+
+    print(f"Your total score was {score}.")
 
 
 start_quiz()
