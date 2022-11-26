@@ -12,19 +12,20 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('chris_python_quiz')
 
+# quiz questions for post training quiz
 quiz_data = [
     {"question": "What does the term Progression mean in grant assessment?",
     "answers": {"a": "moving forward in your education",
                 "b": "moving backward in your qualifications",
                 "c": "staying at the same level"},
     "correct_answer": "a"},
-    {"question": "How many levels are there in the QQI framework\n
+    {"question": "How many levels are there in the QQI framework\
     of qualifications?",
     "answers": {"a": "7",
                 "b": "10",
                 "c": "15"},
     "correct_answer": "b"},
-    {"question": "What is the lowest qualification level that is\n 
+    {"question": "What is the lowest qualification level that is\
     covered by grant funding?",
     "answers": {"a": "PLC Level 5",
                 "b": "Undergraduate Degree Level 7",
@@ -41,3 +42,20 @@ quiz_data = [
                 "c": "Dublin Business School"},
     "correct_answer": "c"},
 ]
+
+score = 0
+
+def start_quiz():
+    """
+    Beginning of quiz, includes welcome message, gets trainee's name and
+    shows instructions for quiz
+    """
+    name = input("Hi trainee, please enter your name and hit enter: ")
+    if name == "":
+        print("A name is required to take the quiz")
+        name = input("Please enter your name and hit enter: ")
+    else:
+        print(f"Welcome to the post training quiz {name}")
+
+
+start_quiz()
