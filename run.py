@@ -98,7 +98,7 @@ def run_quiz(data):
             score = score + 1
             print(f"Your score: {score}\n")
         elif user_answer != entry['correct_answer']:
-            print(f"Sorry {name}, that's incorrect. \nThe correct answer was [{correct_answer, value}].\n")
+            print(f"Sorry {name}, that's incorrect. \nThe correct answer was {correct_answer}.\n")
 
     print(f"Well done for completing the training quiz, {name}.")
     print(f"Your total score was {score} points.\n")
