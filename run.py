@@ -56,6 +56,16 @@ def start_quiz():
         start_quiz()
     else:
         print(f"Welcome to the post training quiz {name}")
+        print("The quiz consists of ten questions to test your knowledge\nof the training module that was delivered to you recently.\n")
+        print("The questions are in multiple choice format with options a, b and c.\n")
+        print("When prompted, please enter you answer a, b or c and hit the enter key.\n")
+
+    begin_quiz = input(f"Are you ready to begin, {name}? (y/n): ")
+
+    if begin_quiz.lower == "y":
+        print("Okay, let's start. Good luck!")
+    elif begin_quiz.lower == "n":
+        print("This quiz is mandatory for all trainees. Please complete it before your assigned deadline.")
 
 
 start_quiz()
