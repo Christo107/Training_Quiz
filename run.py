@@ -45,8 +45,7 @@ quiz_data = [
     "correct_answer": "c"},
 ]
 
-score = 0
-
+name = ""
 
 def start_quiz():
     """
@@ -69,7 +68,7 @@ def start_quiz():
     begin_quiz = input(f"Are you ready to begin, {name}? (y/n): ")
 
     if begin_quiz.lower() == "y":
-        print("Okay, let's start. Good luck!")
+        print("Okay, let's start. Good luck!\n")
     elif begin_quiz.lower() == "n":
         print("This quiz is mandatory for all trainees. Please complete it\
         before your assigned deadline.")
@@ -77,4 +76,29 @@ def start_quiz():
         print("Please select either y or n.")
 
 
+
+def run_quiz(data):
+    """
+    Loops through the questions and answers in the quiz data dictionary
+    """
+    score = 0
+    
+    for entry in quiz_data:
+        # question_text = question.get("question")
+        # print(question_text)
+
+        for key, value in entry['answers'].items():
+            print(f"{key}: {value}")
+
+        user_answer = input("Answer: ")
+        user_answer = user_answer.lower()
+
+        if user_answer == entry['correct_answer']:
+            print(f"That's correct {name}! Well done")
+            score = score += 1
+        elif user_answer != entry['correct_answer']:
+            print(f"Sorry {name}, that's incorrect. The correct answer was {correct_answer}.")
+
+
 start_quiz()
+run_quiz(quiz_data)
