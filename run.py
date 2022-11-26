@@ -50,6 +50,7 @@ def start_quiz():
     global name
     name = input("Hi trainee, please enter your name and hit enter: ")
 
+    # Relaunches start quiz if no name is entered and user only clicks enter
     if name == "":
         print("A name is required to take the quiz")
         start_quiz()
@@ -60,6 +61,7 @@ def start_quiz():
         print("Options are a, b or c for all questions.\n")
         print("When prompted, please enter you answer a, b or c and hit the enter key.\n")
 
+    # Asks user if they'd like to begin the quiz pulling in the name they have entered above
     begin_quiz = input(f"Are you ready to begin, {name}? (y/n): \n")
 
     if begin_quiz.lower() == "y":
@@ -98,8 +100,16 @@ def run_quiz(data):
         elif user_answer != entry['correct_answer']:
             print(f"Sorry {name}, that's incorrect. The correct answer was {correct_answer, value}.\n")
 
+    print(f"Well done for completing the training quiz, {name}.")
     print(f"Your total score was {score} points.")
 
+
+def export_results()
+"""
+This function will export the results of the quiz including
+the trainees name and final score to the results worksheet
+in order for the trainer to evaluate each person's progress
+"""
 
 start_quiz()
 run_quiz(quiz_data)
