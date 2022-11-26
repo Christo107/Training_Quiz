@@ -19,26 +19,22 @@ quiz_data = [
                 "b": "moving backward in your qualifications",
                 "c": "staying at the same level"},
     "correct_answer": "a"},
-    {"question": "How many levels are there in the QQI framework\
-    of qualifications?",
+    {"question": "How many levels are there in the QQI framework of qualifications?",
     "answers": {"a": "7",
                 "b": "10",
                 "c": "15"},
     "correct_answer": "b"},
-    {"question": "What is the lowest qualification level that is\
-    covered by grant funding?",
+    {"question": "What is the lowest qualification level that is covered by grant funding?",
     "answers": {"a": "PLC Level 5",
                 "b": "Undergraduate Degree Level 7",
                 "c": "Leaving Certificate Level 4"},
     "correct_answer": "a"},
-    {"question": "Which of these levels is not part of the Undergraduate\
-    levels?",
+    {"question": "Which of these levels is not part of the Undergraduate levels?",
     "answers": {"a": "Level 8 Higher Diploma",
                 "b": "Level 6 Higher Certificate",
                 "c": "Level 7 Ordinary Bachelor Degree"},
     "correct_answer": "a"},
-    {"question": "Which of these colleges is not an approved college\
-         for grant funding?",
+    {"question": "Which of these colleges is not an approved college for grant funding?",
     "answers": {"a": "University College Dublin",
                 "b": "Trinity College",
                 "c": "Dublin Business School"},
@@ -58,13 +54,11 @@ def start_quiz():
         print("A name is required to take the quiz")
         start_quiz()
     else:
-        print(f"Welcome to the post training quiz {name}")
-        print("The quiz consists of ten questions to test your knowledge\
-            of the training module that was delivered to you recently.\n")
-        print("The questions are in multiple choice format with\
-            options a, b and c.\n")
-        print("When prompted, please enter you answer a, b or c\
-            and hit the enter key.\n")
+        print(f"Welcome to the post training quiz {name}.\n")
+        print("The quiz consists of ten questions to test your knowledge of the training module that was delivered to you recently.\n")
+        print("The questions are in multiple choice format.\n")
+        print("Options are a, b or c for all questions.\n")
+        print("When prompted, please enter you answer a, b or c and hit the enter key.\n")
 
     begin_quiz = input(f"Are you ready to begin, {name}? (y/n): \n")
 
@@ -104,7 +98,7 @@ def run_quiz(data):
         elif user_answer != entry['correct_answer']:
             print(f"Sorry {name}, that's incorrect. The correct answer was {correct_answer, value}.\n")
 
-    print(f"Your total score was {score}.")
+    print(f"Your total score was {score} points.")
 
 
 start_quiz()
