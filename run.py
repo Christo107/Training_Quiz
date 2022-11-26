@@ -108,7 +108,7 @@ def run_quiz(data):
     print(f"Your total score was {score} points.\n")
     print("Thank you and have a nice day.")
 
-    print(f"{name}{score}")
+    print(f"{name},{score}")
 
 
 def export_results(data):
@@ -124,4 +124,4 @@ def export_results(data):
 
 start_quiz()
 run_quiz(quiz_data)
-export_results()
+export_results(name, score)
