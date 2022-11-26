@@ -55,7 +55,7 @@ def start_quiz():
         print("A name is required to take the quiz")
         start_quiz()
     else:
-        print(f"Welcome to the post training quiz {name}.\n")
+        print(f"Welcome to the Progression module training quiz {name}.\n")
         print("The quiz consists of ten questions to test your knowledge of the training module that was delivered to you recently.\n")
         print("The questions are in multiple choice format.\n")
         print("Options are a, b or c for all questions.\n")
@@ -73,7 +73,7 @@ def start_quiz():
         print("Please select either y or n.")
 
 
-
+# run_quiz function based on project by Leah Fisher https://github.com/cornishcoder1/Food_of_Japan_Quiz
 def run_quiz(data):
     """
     Loops through the questions and answers in the quiz data dictionary
@@ -98,18 +98,23 @@ def run_quiz(data):
             score = score + 1
             print(f"Your score: {score}\n")
         elif user_answer != entry['correct_answer']:
-            print(f"Sorry {name}, that's incorrect. The correct answer was {correct_answer, value}.\n")
+            print(f"Sorry {name}, that's incorrect. \nThe correct answer was [{correct_answer, value}].\n")
 
     print(f"Well done for completing the training quiz, {name}.")
-    print(f"Your total score was {score} points.")
+    print(f"Your total score was {score} points.\n")
+    print("Thank you and have a nice day.")
 
 
-def export_results()
-"""
-This function will export the results of the quiz including
-the trainees name and final score to the results worksheet
-in order for the trainer to evaluate each person's progress
-"""
+def export_results(data):
+    """
+    This function will export the results of the quiz including
+    the trainees name and final score to the results worksheet
+    in order for the trainer to evaluate each person's progress
+    """
+    print("Updating results worksheet...\n")
+    results_worksheet = SHEET.worksheet("results")
+    results.worksheet.append_row(data)
+    print("Results exported to worksheet successfully")
 
 start_quiz()
 run_quiz(quiz_data)
