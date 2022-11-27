@@ -55,7 +55,7 @@ def start_quiz():
         print("A name is required to take the quiz")
         start_quiz()
     else:
-        print(f"Welcome to the Progression module training quiz {name}.\n")
+        print(f"\nWelcome to the Progression module training quiz {name}.\n")
         print("The quiz consists of ten questions to test your knowledge of the training module that was delivered to you recently.\n")
         print("The questions are in multiple choice format.\n")
         print("Options are a, b or c for all questions.\n")
@@ -104,7 +104,7 @@ def run_quiz(data):
             print(f"The correct answer was {correct_answer}.")
             print("---------------------------------------")
 
-    print(f"Well done for completing the training quiz, {name}.")
+    print(f"Well done for completing the training quiz, {name}.\n")
     print(f"Your total score was {score} points.\n")
     print("Thank you and have a nice day.")
 
