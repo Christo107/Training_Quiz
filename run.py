@@ -15,7 +15,7 @@ SCOPE = [
     ]
 
 """
-Google sheets access variables
+Google sheets access credentials variables
 """
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
@@ -23,7 +23,7 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('chris_python_quiz')
 
 
-NAME = ""
+name = ""
 SCORE = 0
 
 # quiz questions for training quiz
