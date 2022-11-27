@@ -102,17 +102,17 @@ def start_quiz():
         start_quiz()
     else:
         print(f"\nWelcome to the Progression module training quiz {name}.\n")
-        time.sleep(1)
+        time.sleep(2)
         print("The quiz consists of ten questions to test your knowledge of "
               "the training module that was delivered to you recently.\n")
-        time.sleep(1)
+        time.sleep(2)
         print("The questions are in multiple choice format.\n")
-        time.sleep(1)
+        time.sleep(2)
         print("Options are a, b or c for all questions.\n")
-        time.sleep(1)
+        time.sleep(2)
         print("When prompted, please enter you answer a, b or c and hit the "
               "enter key.\n")
-        time.sleep(1)
+        time.sleep(2)
 
     # Asks user if they'd like to begin the quiz pulling in the name they have\
     # entered above
@@ -159,12 +159,14 @@ def run_quiz(data):
             print(f"Your score: {score}")
             print("---------------------------------------")
             time.sleep(3)
+            os.system('cls' if os.name == 'nt' else 'clear')
 
         elif user_answer != entry['correct_answer']:
             print(f"Sorry {name}, that's incorrect.\n")
             print(f"The correct answer was {correct_answer}.")
             print("---------------------------------------")
             time.sleep(3)
+            os.system('cls' if os.name == 'nt' else 'clear')
 
     print(f"Well done for completing the training quiz, {name}.\n")
     print(f"Your total score was {score} points.\n")
