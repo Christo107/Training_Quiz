@@ -91,7 +91,7 @@ def start_quiz():
     shows instructions for quiz
     """
     global name
-    name = input("Hi trainee, please enter your name and hit enter: ")
+    name = input("Hi trainee, please enter your name and hit enter:\n")
 
     # Relaunches start quiz if no name is entered and user only clicks Enter
     if name == "":
