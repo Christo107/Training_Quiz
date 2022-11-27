@@ -54,6 +54,34 @@ quiz_data = [
                  "b": "Trinity College",
                  "c": "Dublin Business School"},
      "correct_answer": "c"},
+    {"question": "What does QQI stand for?",
+     "answers": {"a": "Quality and Qualifications Ireland",
+                 "b": "Query and Quality Institute",
+                 "c": "Qualifications Quadranagle Ireland"},
+     "correct_answer": "a"},
+    {"question": "What is a second chance student?",
+     "answers": {"a": "Someone who previously attended college but did not "
+                      "receive an award more than 5 years ago",
+                 "b": "Someone attending their second college course",
+                 "c": "Someone doing the same course again"},
+     "correct_answer": "a"},
+    {"question": "Which qualification is lower on the NFQ 10 level framework?",
+     "answers": {"a": "Postgraduate Diploma",
+                 "b": "Masters",
+                 "c": "Higher Diploma"},
+     "correct_answer": "c"},
+    {"question": "What is a Repeat Period of Study?",
+     "answers": {"a": "Repeating the same course",
+                 "b": "A time equivalent to previous attendance for which "
+                      "funding is not available",
+                 "c": "Repeating a module"},
+     "correct_answer": "a"},
+    {"question": "Which of these statements is false?",
+     "answers": {"a": "A student is progressing moving from PLC6 to UG6",
+                 "b": "There is no limit on the amount of years a student "
+                      "can receive funding",
+                 "c": "A PHD is the highest level on the NFQ."},
+     "correct_answer": "b"},
 ]
 
 
