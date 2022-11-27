@@ -1,8 +1,10 @@
 """
-Import to use gspread for tracking trainee names and scores
+Imports to use gspread for tracking trainee names and scores
+Import os for clearing screen to help with user experience
 """
 import gspread
 from google.oauth2.service_account import Credentials
+import os
 
 
 SCOPE = [
@@ -112,10 +114,12 @@ def start_quiz():
 
     if begin_quiz.lower() == "y":
         print("\nOkay, let's start. Good luck!\n")
+        os.system('cls' if os.name == 'nt' else 'clear')
     elif begin_quiz.lower() == "n":
         print("This quiz is mandatory for all trainees. Please complete it "
               "before your assigned deadline.")
         begin_quiz = input(f"Are you ready to begin, {name}? (y/n): \n")
+        os.system('cls' if os.name == 'nt' else 'clear')
     else:
         print("Please select either y or n.")
 
@@ -146,10 +150,12 @@ def run_quiz(data):
             score = score + 1
             print(f"Your score: {score}")
             print("---------------------------------------")
+            os.system('cls' if os.name == 'nt' else 'clear')
         elif user_answer != entry['correct_answer']:
             print(f"Sorry {name}, that's incorrect.\n")
             print(f"The correct answer was {correct_answer}.")
             print("---------------------------------------")
+            os.system('cls' if os.name == 'nt' else 'clear')
 
     print(f"Well done for completing the training quiz, {name}.\n")
     print(f"Your total score was {score} points.\n")
