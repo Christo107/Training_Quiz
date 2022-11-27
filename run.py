@@ -15,30 +15,30 @@ SHEET = GSPREAD_CLIENT.open('chris_python_quiz')
 # quiz questions for post training quiz
 quiz_data = [
     {"question": "What does the term Progression mean in grant assessment?",
-    "answers": {"a": "moving forward in your education",
-                "b": "moving backward in your qualifications",
-                "c": "staying at the same level"},
-    "correct_answer": "a"},
+     "answers": {"a": "moving forward in your education",
+                 "b": "moving backward in your qualifications",
+                 "c": "staying at the same level"},
+     "correct_answer": "a"},
     {"question": "How many levels are there in the QQI framework of qualifications?",
-    "answers": {"a": "7",
-                "b": "10",
-                "c": "15"},
-    "correct_answer": "b"},
+     "answers": {"a": "7",
+                 "b": "10",
+                 "c": "15"},
+     "correct_answer": "b"},
     {"question": "What is the lowest qualification level that is covered by grant funding?",
-    "answers": {"a": "PLC Level 5",
-                "b": "Undergraduate Degree Level 7",
-                "c": "Leaving Certificate Level 4"},
-    "correct_answer": "a"},
+     "answers": {"a": "PLC Level 5",
+                 "b": "Undergraduate Degree Level 7",
+                 "c": "Leaving Certificate Level 4"},
+     "correct_answer": "a"},
     {"question": "Which of these levels is not part of the Undergraduate levels?",
-    "answers": {"a": "Level 8 Higher Diploma",
-                "b": "Level 6 Higher Certificate",
-                "c": "Level 7 Ordinary Bachelor Degree"},
-    "correct_answer": "a"},
+     "answers": {"a": "Level 8 Higher Diploma",
+                 "b": "Level 6 Higher Certificate",
+                 "c": "Level 7 Ordinary Bachelor Degree"},
+     "correct_answer": "a"},
     {"question": "Which of these colleges is not an approved college for grant funding?",
-    "answers": {"a": "University College Dublin",
-                "b": "Trinity College",
-                "c": "Dublin Business School"},
-    "correct_answer": "c"},
+     "answers": {"a": "University College Dublin",
+                 "b": "Trinity College",
+                 "c": "Dublin Business School"},
+     "correct_answer": "c"},
 ]
 
 
@@ -122,6 +122,7 @@ def export_results(data):
     results.worksheet.append_row(data)
     print("Results exported to worksheet successfully")
 
+
 start_quiz()
 run_quiz(quiz_data)
-export_results(name, score)
+export_results()
