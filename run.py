@@ -150,7 +150,7 @@ def run_quiz(data):
             for key, value in entry['answers'].items():
                 print(f"{key}: {value}")
 
-            user_answer = input("Answer: \n")
+            user_answer = input("Answer(a, b or c): \n")
             user_answer = user_answer.lower()
 
         if user_answer == entry['correct_answer']:

@@ -53,16 +53,16 @@ The live website on Heroku can be accessed at the following link: [View my Live 
         - the format of the questions,
         - the different options that can be chosen and
         - how to chose the option you want.
-    - It then asks the user if they ready to proceed with the quiz
+    - It then asks the user if they ready to proceed with the quiz, if so, the quiz begins.
+    - If they select no, a warning message appears to tell them that the quiz is mandatory and must be completed by the deadline assigned.
     
 ![Introduction and Instructions image](./assets/documentation/images/intro_instructions.jpg)
 
-![](./assets/documentation/images)
-
 - #### **Questions**
-    - 
+    - The questions appear one at a time, along with the 3 possible options
+    - There is then a space for the user to nenter their answer
 
-[](./assets/documentation/images/name_required.jpg)
+[](./assets/documentation/images)
 
 ### Future Features
 
