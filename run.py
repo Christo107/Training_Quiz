@@ -39,8 +39,8 @@ quiz_data = [
                  "b": "10",
                  "c": "15"},
      "correct_answer": "b"},
-    {"question": "3. What is the lowest qualification level that is covered by "
-                 "grant funding?",
+    {"question": "3. What is the lowest qualification level that is "
+                 "covered by grant funding?",
      "answers": {"a": "PLC Level 5",
                  "b": "Undergraduate Degree Level 7",
                  "c": "Leaving Certificate Level 4"},
@@ -68,7 +68,8 @@ quiz_data = [
                  "b": "Someone attending their second college course",
                  "c": "Someone doing the same course again"},
      "correct_answer": "a"},
-    {"question": "8. Which qualification is lower on the NFQ 10 level framework?",
+    {"question": "8. Which qualification is lower on the NFQ 10 level "
+                 "framework?",
      "answers": {"a": "Postgraduate Diploma",
                  "b": "Masters",
                  "c": "Higher Diploma"},
