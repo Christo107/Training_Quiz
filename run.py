@@ -28,58 +28,58 @@ SCORE = 0
 
 # quiz questions for training quiz
 quiz_data = [
-    {"question": "What does the term Progression mean in grant assessment?",
+    {"question": "1. What does the term Progression mean in grant assessment?",
      "answers": {"a": "moving forward in your education",
                  "b": "moving backward in your qualifications",
                  "c": "staying at the same level"},
      "correct_answer": "a"},
-    {"question": "How many levels are there in the QQI framework of "
+    {"question": "2. How many levels are there in the QQI framework of "
                  "qualifications?",
      "answers": {"a": "7",
                  "b": "10",
                  "c": "15"},
      "correct_answer": "b"},
-    {"question": "What is the lowest qualification level that is covered by "
+    {"question": "3. What is the lowest qualification level that is covered by "
                  "grant funding?",
      "answers": {"a": "PLC Level 5",
                  "b": "Undergraduate Degree Level 7",
                  "c": "Leaving Certificate Level 4"},
      "correct_answer": "a"},
-    {"question": "Which of these levels is not part of the Undergraduate "
+    {"question": "4. Which of these levels is not part of the Undergraduate "
                  "levels?",
      "answers": {"a": "Level 8 Higher Diploma",
                  "b": "Level 6 Higher Certificate",
                  "c": "Level 7 Ordinary Bachelor Degree"},
      "correct_answer": "a"},
-    {"question": "Which of these colleges is not an approved college for "
+    {"question": "5. Which of these colleges is not an approved college for "
                  "grant funding?",
      "answers": {"a": "University College Dublin",
                  "b": "Trinity College",
                  "c": "Dublin Business School"},
      "correct_answer": "c"},
-    {"question": "What does QQI stand for?",
+    {"question": "6. What does QQI stand for?",
      "answers": {"a": "Quality and Qualifications Ireland",
                  "b": "Query and Quality Institute",
                  "c": "Qualifications Quadranagle Ireland"},
      "correct_answer": "a"},
-    {"question": "What is a second chance student?",
+    {"question": "7. What is a second chance student?",
      "answers": {"a": "Someone who previously attended college but did not "
                       "receive an award more than 5 years ago",
                  "b": "Someone attending their second college course",
                  "c": "Someone doing the same course again"},
      "correct_answer": "a"},
-    {"question": "Which qualification is lower on the NFQ 10 level framework?",
+    {"question": "8. Which qualification is lower on the NFQ 10 level framework?",
      "answers": {"a": "Postgraduate Diploma",
                  "b": "Masters",
                  "c": "Higher Diploma"},
      "correct_answer": "c"},
-    {"question": "What is a Repeat Period of Study?",
+    {"question": "9. What is a Repeat Period of Study?",
      "answers": {"a": "Repeating the same course",
                  "b": "A time equivalent to previous attendance for which "
                       "funding is not available",
                  "c": "Repeating a module"},
      "correct_answer": "a"},
-    {"question": "Which of these statements is false?",
+    {"question": "10. Which of these statements is false?",
      "answers": {"a": "A student is progressing moving from PLC6 to UG6",
                  "b": "There is no limit on the amount of years a student "
                       "can receive funding",
