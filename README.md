@@ -97,7 +97,7 @@ The live website on Heroku can be accessed at the following link: [View my Live 
     * I tested that the final score is displayed to the trainee when they complete the quiz. **Passed**
 
 ## Design
-- The design of the quiz is simple and straightforward in nature. How the quiz is to be used did not require any visual image elements, and these would be a distraction for the trainee.
+- The design of the quiz is simple and straightforward in nature. How the quiz is to be used did not require any visual image elements, and these would be a distraction for the trainee. I wanted to first provide instructions to the user so they understood what was required of them to complete the quiz. also, where errors could be made, I wanted to provide feedback to guide back to where they should be.
 ### Accessibility
 The app provides feedback to the user at various stages to instruct them if they have made an error, for example, if they do not enter a name at the beginning, they are instructed to enter a name to proceed. 
 
@@ -115,7 +115,7 @@ The app provides feedback to the user at various stages to instruct them if they
 ## Testing
 
 ### Validator Testing
-
+- The code was run through the PEP8 validator to check for errors in the code.
 ### User Story Testing
 - I used the user stories to perform manual testing on the quiz to see whether there were any blockers to the user goals identified above. The results are listed above in the [User Stories](#user-stories) section
 
@@ -130,12 +130,26 @@ The app provides feedback to the user at various stages to instruct them if they
 
 ### Known Bugs
 - **Correct answer bug** – if a user chose the incorrect answer, the program should tell them what the correct answer was. There was a bug where the correct answer wasn’t displaying correctly, with parentheses and commas. This bug still exists, so I have removed the need to show the full value of the correct answer, instead ony showing the initial a,b or c until a fix can be found
+
+![Correct Answer bug](./assets/documentation/images/correct_answer_bug.jpg)
+
 - **Proceed if N Bug** - when the user is first asked if they'd like to proceed, and they answer N, a warning is shown to tell them it is a mandatory quiz and they must complete it before their deadline. The question of proceeding(y/n) is then displayed again. If they answer N again, the quiz still commences.
 
 ## Deployment
-
+The project was deployed on Heroku using the following method:
+1. Add dependencies in GitPod to requirements.txt file with command "pip3 freeze > requirements.txt"
+2. Commit and push to GitHub as usual
+3. Go to the Heroku Dashboard
+4. Click "Create new app"
+5. Name app and select location
+6. Add Config Vars for Creds and Port in Settings tab
+7. Add the buildbacks to Python and NodeJS in that order.
+8. Select appropriate deployment method e.g. GitHub
+9. Connect to Github and link to repo
+10. Enable Automatic Deploys and deploy manually
+11. Click on Deploy.
 ## Credits
-
+Run_quiz function based on code by Leah Fisher https://github.com/cornishcoder1/Food_of_Japan_Quiz with suggestions by Declan_5P(Slack username) and [Sean Young-aluminati](https://github.com/seanyoung247)U
 ### Code
 
 
