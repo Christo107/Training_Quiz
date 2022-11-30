@@ -79,14 +79,22 @@ The live website on Heroku can be accessed at the following link: [View my Live 
 ### User Stories
 #### Client Goals
 - As a trainer/teacher, I want to be able to keep a log of the trainees who have completed the quiz, so I can follow up with any who haven't yet.
-- As a trainer/teacher, I want to be able to keep a log of the the scores each trainee got, so I know if they require further training 
+    * I tested that the username of the trainees is passed to the results worksheet as they complete the quiz. **Passed**
+- As a trainer/teacher, I want to be able to keep a log of the the scores each trainee got, so I know if they require further training.
+    * I tested that the score of the trainees is passed to the results worksheet as they complete the quiz, and is listed on the same row to avoid mistakes. **Passed**
 - As a trainer/teacher, I want the trinees to be able to access the quiz without any problem, so they can complete the quiz
+    * I tested that the users could complete the quiz without issue. **Passed**
 #### User Goals
 - As a trainee, I want to be able to enter my name and proceed with the quiz, so I can find out my how well I know the training material
+    * I tested that the trainee can enter a username and proceed with the quiz. **Passed**
 - As a trainee, I want to be able to understand what the quiz consists of, so I know how long it will take
+    * I tested that the instructions for the quiz are displayed each time a trainee begins the quiz. **Passed**
 - As a trainee, I want to be able to proceed when I am ready, so I can be prepared to answer the questions
+    * I tested that the trainee can only proceed if they answer Y to the "ready to proceed" question. **Failed** (see [Proceed if N bug](#known-bugs) below)
 - As a trainee, I want to be able to see which questions I get wrong, so I know what I need to study more
+    * I tested that the incorrect answers are flagged to the user as they go through the quiz. **Passed**
 - As a trainee, I want to be able to see my final score, so I know how I did in the quiz
+    * I tested that the final score is displayed to the trainee when they complete the quiz. **Passed**
 
 ## Design
 - The design of the quiz is simple and straightforward in nature. How the quiz is to be used did not require any visual image elements, and these would be a distraction for the trainee.
@@ -109,13 +117,7 @@ The app provides feedback to the user at various stages to instruct them if they
 ### Validator Testing
 
 ### User Story Testing
-- I used the user stories to perform manual testing on the quiz to see whether there were any blockers to the user goals identified above. These are the results:
-
-#### Client Goals
-1. 
-    
-#### User Goals
-1. 
+- I used the user stories to perform manual testing on the quiz to see whether there were any blockers to the user goals identified above. The results are listed above in the [User Stories](#user-stories) section
 
 ## Bugs
 ### Fixed Bugs
