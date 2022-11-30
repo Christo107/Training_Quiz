@@ -104,8 +104,8 @@ def start_quiz():
     else:
         print(f"\nWelcome to the Progression module training quiz {NAME}.\n")
         time.sleep(2)
-        print("The quiz consists of ten questions to test your knowledge of "
-              "the training module that was delivered to you recently.\n")
+        print("The quiz consists of ten questions to test your knowledge "
+              "of the training module that was delivered to you recently.\n")
         time.sleep(2)
         print("The questions are in multiple choice format.\n")
         time.sleep(2)
@@ -140,7 +140,6 @@ def run_quiz(data):
     Loops through the questions and answers in the quiz data dictionary
     """
     score = 0
-    incorrect_answers = []
 
     for entry in quiz_data:
         user_answer = ""
@@ -166,7 +165,6 @@ def run_quiz(data):
         elif user_answer != entry['correct_answer']:
             print(f"Sorry {NAME}, that's incorrect.\n")
             print(f"The correct answer was {correct_answer}.")
-            incorrect_answers.append(entry['question'])
             print("---------------------------------------")
             time.sleep(3)
             os.system('cls' if os.name == 'nt' else 'clear')
@@ -174,7 +172,7 @@ def run_quiz(data):
     print(f"Well done for completing the training quiz, {NAME}.\n")
     print(f"Your total score was {score} points.\n")
     print("Thank you and have a nice day.")
-    data = NAME, score, incorrect_answers
+    data = NAME, score
     export_results(data)
 
 
