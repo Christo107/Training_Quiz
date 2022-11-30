@@ -138,7 +138,7 @@ The app provides feedback to the user at various stages to instruct them if they
 
 ![Correct Answer bug](./assets/documentation/images/correct_answer_bug.jpg)
 
-- **Proceed if N Bug** - when the user is first asked if they'd like to proceed, and they answer N, a warning is shown to tell them it is a mandatory quiz and they must complete it before their deadline. The question of proceeding(y/n) is then displayed again. If they answer N again, the quiz still commences.
+- **Proceed if N Bug** - when the user is first asked if they'd like to proceed, and they answer N, a warning is shown to tell them it is a mandatory quiz and they must complete it before their deadline. The question of proceeding(y/n) is then displayed again. If they answer N again, the quiz still commences. This also happens if they enter something other than y or n.
 
 ## Deployment
 The project was deployed on Heroku using the following method:

@@ -119,10 +119,6 @@ def start_quiz():
     # entered above
     begin_quiz = input(f"Are you ready to begin, {NAME}? (y/n): ")
 
-    while begin_quiz.lower not in ["y", "n"]:
-        print("Please select either y or n.")
-        print(begin_quiz)
-
     if begin_quiz.lower() == "y":
         print("\nOkay, let's start. Good luck!\n")
         time.sleep(1)
