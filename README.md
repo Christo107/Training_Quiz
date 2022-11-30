@@ -1,8 +1,6 @@
 # Training Evaluation Quiz
 The purpose of this quiz is for Teachers/Trainers to evaluate whether the learners have a good grasp of the theory module concepts and contents that have been delivered to them previously. A link would be sent to the students for them to complete the 10 question quiz, and the name and final score is exported to a Google worksheet where the teacher can view and determine if the score is sufficient, or more training is required.
 
-![Responsive Mockup](#)
-
 The live website on Heroku can be accessed at the following link: [View my Live Website on Heroku here](https://progression-training-quiz.herokuapp.com/)
 
 ## CONTENTS
@@ -71,6 +69,11 @@ The live website on Heroku can be accessed at the following link: [View my Live 
     - They are thanked and wished a nice day
 
 ![Final Score and Thank You image](./assets/documentation/images/final_window.jpg)
+
+- #### **Results Worksheet**
+    - This Google sheet contains all the trainees who have completed the quiz along with the score they achieved. 
+
+![Results Worksheet Image](./assets/documentation/images/result_worksheet.jpg)
 
 ### Future Features
 - Future improvements will include logging the incorrect answers of the trainee for the teacher to identify areas that need improvement.
@@ -149,18 +152,5 @@ The project was deployed on Heroku using the following method:
 10. Enable Automatic Deploys and deploy manually
 11. Click on Deploy.
 ## Credits
-Run_quiz function based on code by Leah Fisher https://github.com/cornishcoder1/Food_of_Japan_Quiz with suggestions by Declan_5P(Slack username) and [Sean Young-aluminati](https://github.com/seanyoung247)U
-### Code
-
-
-
-### Content
-
--
-
-### Media
-
-- 
-
-## Acknowledgements
- - 
+Run_quiz function based on code by Leah Fisher https://github.com/cornishcoder1/Food_of_Japan_Quiz with suggestions by Declan_5P(Slack username) and [Sean Young-aluminati](https://github.com/seanyoung247)
+Jason Dunton for his advice certain aspects of my project
