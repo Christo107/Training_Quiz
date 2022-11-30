@@ -23,7 +23,7 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('chris_python_quiz')
 
 
-name = ""
+name = input("Hi trainee, please enter your name and hit enter:\n")
 SCORE = 0
 
 # quiz questions for training quiz
@@ -94,8 +94,7 @@ def start_quiz():
     Beginning of quiz, includes welcome message, gets trainee's name and
     shows instructions for quiz
     """
-    global name
-    name = input("Hi trainee, please enter your name and hit enter:\n")
+    name()
 
     # Relaunches start quiz if no name is entered and user only clicks Enter
     if name == "":
