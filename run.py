@@ -95,14 +95,14 @@ def start_quiz():
     shows instructions for quiz
     """
     global NAME
-    name = input("Hi trainee, please enter your name and hit enter:\n")
+    NAME = input("Hi trainee, please enter your name and hit enter:\n")
 
     # Relaunches start quiz if no name is entered and user only clicks Enter
-    if name == "":
+    if NAME == "":
         print("A name is required to take the quiz")
         start_quiz()
     else:
-        print(f"\nWelcome to the Progression module training quiz {name}.\n")
+        print(f"\nWelcome to the Progression module training quiz {NAME}.\n")
         time.sleep(2)
         print("The quiz consists of ten questions to test your knowledge of "
               "the training module that was delivered to you recently.\n")
@@ -117,7 +117,7 @@ def start_quiz():
 
     # Asks user if they'd like to begin the quiz pulling in the name they have\
     # entered above
-    begin_quiz = input(f"Are you ready to begin, {name}? (y/n): ")
+    begin_quiz = input(f"Are you ready to begin, {NAME}? (y/n): ")
 
     if begin_quiz.lower() == "y":
         print("\nOkay, let's start. Good luck!\n")
@@ -126,7 +126,7 @@ def start_quiz():
     elif begin_quiz.lower() == "n":
         print("This quiz is mandatory for all trainees. Please complete it "
               "before your assigned deadline.")
-        begin_quiz = input(f"Are you ready to begin, {name}? (y/n): \n")
+        begin_quiz = input(f"Are you ready to begin, {NAME}? (y/n): \n")
         time.sleep(1)
         os.system('cls' if os.name == 'nt' else 'clear')
     else:

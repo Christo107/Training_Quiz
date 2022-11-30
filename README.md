@@ -118,7 +118,8 @@ The app provides feedback to the user at various stages to instruct them if they
 ## Testing
 
 ### Validator Testing
-- The code was run through the PEP8 validator to check for errors in the code.
+- The code was run through the [Code Institute Python Linter](https://pep8ci.herokuapp.com/) and showed no errors.
+[CI Python Linter Result Image](./assets/documentation/images/ci_python_linter_result.jpg)
 ### User Story Testing
 - I used the user stories to perform manual testing on the quiz to see whether there were any blockers to the user goals identified above. The results are listed above in the [User Stories](#user-stories) section
 
