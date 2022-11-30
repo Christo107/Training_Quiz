@@ -23,7 +23,7 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('chris_python_quiz')
 
 
-name = input("Hi trainee, please enter your name and hit enter:\n")
+NAME = ""
 SCORE = 0
 
 # quiz questions for training quiz
@@ -94,7 +94,8 @@ def start_quiz():
     Beginning of quiz, includes welcome message, gets trainee's name and
     shows instructions for quiz
     """
-    name()
+    global NAME
+    name = input("Hi trainee, please enter your name and hit enter:\n")
 
     # Relaunches start quiz if no name is entered and user only clicks Enter
     if name == "":
@@ -154,7 +155,7 @@ def run_quiz(data):
             user_answer = user_answer.lower()
 
         if user_answer == entry['correct_answer']:
-            print(f"That's correct {name}! Well done\n")
+            print(f"That's correct {NAME}! Well done\n")
             score = score + 1
             print(f"Your score: {score}")
             print("---------------------------------------")
@@ -162,16 +163,16 @@ def run_quiz(data):
             os.system('cls' if os.name == 'nt' else 'clear')
 
         elif user_answer != entry['correct_answer']:
-            print(f"Sorry {name}, that's incorrect.\n")
+            print(f"Sorry {NAME}, that's incorrect.\n")
             print(f"The correct answer was {correct_answer}.")
             print("---------------------------------------")
             time.sleep(3)
             os.system('cls' if os.name == 'nt' else 'clear')
 
-    print(f"Well done for completing the training quiz, {name}.\n")
+    print(f"Well done for completing the training quiz, {NAME}.\n")
     print(f"Your total score was {score} points.\n")
     print("Thank you and have a nice day.")
-    data = name, score
+    data = NAME, score
     export_results(data)
 
 
