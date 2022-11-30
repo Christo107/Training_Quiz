@@ -131,6 +131,7 @@ def start_quiz():
         os.system('cls' if os.name == 'nt' else 'clear')
     else:
         print("Please select either y or n.")
+        begin_quiz()
 
 
 # run_quiz function based on project by Leah Fisher
