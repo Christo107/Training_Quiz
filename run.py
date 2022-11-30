@@ -63,8 +63,8 @@ quiz_data = [
                  "c": "Qualifications Quadranagle Ireland"},
      "correct_answer": "a"},
     {"question": "7. What is a second chance student?",
-     "answers": {"a": "Someone who previously attended college but did not "
-                      "receive an award more than 5 years ago",
+     "answers": {"a": "Someone who previously attended college but "
+                      "did not receive an award more than 5 years ago",
                  "b": "Someone attending their second college course",
                  "c": "Someone doing the same course again"},
      "correct_answer": "a"},
@@ -79,7 +79,7 @@ quiz_data = [
                  "b": "A time equivalent to previous attendance for which "
                       "funding is not available",
                  "c": "Repeating a module"},
-     "correct_answer": "a"},
+     "correct_answer": "b"},
     {"question": "10. Which of these statements is false?",
      "answers": {"a": "A student is progressing moving from PLC6 to UG6",
                  "b": "There is no limit on the amount of years a student "
