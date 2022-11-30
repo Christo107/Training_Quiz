@@ -140,6 +140,7 @@ def run_quiz(data):
     Loops through the questions and answers in the quiz data dictionary
     """
     score = 0
+    incorrect_answers = []
 
     for entry in quiz_data:
         user_answer = ""
@@ -165,6 +166,7 @@ def run_quiz(data):
         elif user_answer != entry['correct_answer']:
             print(f"Sorry {NAME}, that's incorrect.\n")
             print(f"The correct answer was {correct_answer}.")
+            incorrect_answers.append(entry['question'])
             print("---------------------------------------")
             time.sleep(3)
             os.system('cls' if os.name == 'nt' else 'clear')
@@ -172,7 +174,7 @@ def run_quiz(data):
     print(f"Well done for completing the training quiz, {NAME}.\n")
     print(f"Your total score was {score} points.\n")
     print("Thank you and have a nice day.")
-    data = NAME, score
+    data = NAME, score, incorrect_answers
     export_results(data)
 
 
