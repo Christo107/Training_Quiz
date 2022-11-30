@@ -12,26 +12,21 @@ The live website on Heroku can be accessed at the following link: [View my Live 
     *  [Introduction and Instructions](#introduction-and-instructions)
     *  [Questions](#questions)
     *  [Final Score and Thank you](#final-score-and-thank-you)
+    *  [Results Worksheet](#results-worksheet)
 * [User Experience](#user-experience)
     *  [User Stories](#user-stories)
 * [Design](#design)
-    *  [Colour Palette](#colour-palette)
-    *  [Typography](#typography)
-    *  [Imagery](#imagery)
-    *  [Wireframes](#wireframes)
+    *  [Process Flow](#process-flow)
     *  [Accessibility](#accessibility)
 * [Technologies Used](#technologies-used)   
     *  [Languages Used](#languages-used)
     *  [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
 * [Testing](#testing)
     * [Validator Testing](#validator-testing)
-    * [Responsiveness Testing](#responsiveness-testing)
-    * [Accessibility Testing](#accessibility-testing)
     * [User Story Testing](#user-story-testing)
-    * [Bugs](#Bugs)
+    * [Bugs](#bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
-* [Acknowledgements](#acknowledgements)
 
 ## Features
 
@@ -101,6 +96,12 @@ The live website on Heroku can be accessed at the following link: [View my Live 
 
 ## Design
 - The design of the quiz is simple and straightforward in nature. How the quiz is to be used did not require any visual image elements, and these would be a distraction for the trainee. I wanted to first provide instructions to the user so they understood what was required of them to complete the quiz. also, where errors could be made, I wanted to provide feedback to guide back to where they should be.
+
+### Process Flow
+Below is a flow chart to demonstrate the actions that take place while using the app
+
+![Process Flow Chart Image](./assets/documentation/images/app_process_flow.png)
+
 ### Accessibility
 The app provides feedback to the user at various stages to instruct them if they have made an error, for example, if they do not enter a name at the beginning, they are instructed to enter a name to proceed. 
 
@@ -153,5 +154,6 @@ The project was deployed on Heroku using the following method:
 10. Enable Automatic Deploys and deploy manually
 11. Click on Deploy.
 ## Credits
-Run_quiz function based on code by Leah Fisher https://github.com/cornishcoder1/Food_of_Japan_Quiz with suggestions by Declan_5P(Slack username) and [Sean Young-aluminati](https://github.com/seanyoung247)
-Jason Dunton for his advice certain aspects of my project
+- Run_quiz function based on code by Leah Fisher https://github.com/cornishcoder1/Food_of_Japan_Quiz with suggestions by Declan_5P(Slack username) and [Sean Young-aluminati](https://github.com/seanyoung247).
+- Exporting results functionality based on Love_Sandwiches demo project by CI.
+- Jason Dunton for his advice certain aspects of my project
