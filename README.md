@@ -48,7 +48,7 @@ The live website on Heroku can be accessed at the following link: [View my Live 
         - the different options that can be chosen and
         - how to chose the option you want.
     - It then asks the user if they ready to proceed with the quiz, if so, the quiz begins.
-    - If they select no, a warning message appears to tell them that the quiz is mandatory and must be completed by the deadline assigned.
+    - If they select no, a warning message appears to tell them to enter y to begin, or else complete the quiz at another time.
     
 ![Introduction and Instructions image](./assets/documentation/images/intro_instructions.jpg)
 
@@ -72,16 +72,17 @@ The live website on Heroku can be accessed at the following link: [View my Live 
 
 ### Future Features
 - Future improvements will include logging the incorrect answers of the trainee for the teacher to identify areas that need improvement.
+- Username validation - If two users have the same name, an error will appear to ask them to enter an initial to distinguish them.
 
 ## User Experience
-A number of features have been added to improve the user experience while using the app. These include adding a pause between lines of text appearing to avoid bombarding the user with too information at one time. Also, the screen is cleared after the introduction and after each question, to de-clutter the interface for the user. The user is asked whether they would like to proceed with the quiz rather than starting automatically.
+A number of features have been added to improve the user experience while using the app. These include adding a pause between lines of text appearing to avoid bombarding the user with too much information at one time. Also, the screen is cleared after the introduction and after each question, to de-clutter the interface for the user. The user is asked whether they would like to proceed with the quiz rather than starting automatically.
 ### User Stories
 #### Client Goals
 - As a trainer/teacher, I want to be able to keep a log of the trainees who have completed the quiz, so I can follow up with any who haven't yet.
-    * I tested that the username of the trainees is passed to the results worksheet as they complete the quiz. **Passed**
+    * I tested that the username of the trainees is passed to the results worksheet only after they complete the quiz. **Passed**
 - As a trainer/teacher, I want to be able to keep a log of the the scores each trainee got, so I know if they require further training.
     * I tested that the score of the trainees is passed to the results worksheet as they complete the quiz, and is listed on the same row to avoid mistakes. **Passed**
-- As a trainer/teacher, I want the trinees to be able to access the quiz without any problem, so they can complete the quiz
+- As a trainer/teacher, I want the trainees to be able to access the quiz without any problem, so they can complete the quiz
     * I tested that the users could complete the quiz without issue. **Passed**
 #### User Goals
 - As a trainee, I want to be able to enter my name and proceed with the quiz, so I can find out my how well I know the training material
