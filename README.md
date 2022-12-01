@@ -134,13 +134,18 @@ The app provides feedback to the user at various stages to instruct them if they
     - Fix - Added os clear functionality at certain points to de-clutter user interface
 - **Proceed if not y or n bug** - A bug whereby the quiz would start no matter what letter you would put in the "ready to begin(y/n) field. 
     - Fix - Added while loop to stop keep asing question until either y or n entered.
+- **Proceed if N twice Bug** - when the user is first asked if they'd like to proceed, and they answer n, a warning is shown to tell them it is a mandatory quiz and they must complete it before their deadline. The question of proceeding(y/n) is then displayed again. If they answer n again, the quiz still commences.
+    - Fix - To fix this bug, I decided to change my approach to the validation. Instead of having an if statement that looked at what to do if = y, then what to do elif = n, I incorporated the code into the above while loop, which displays an instruction to enter y to begin, or else complete at another time. This stopped a user proceeding until they enter y to the question.
+    ```
+    while begin_quiz != "y":
+        begin_quiz = input(f"Please enter 'y' to begin {NAME}, else "
+                           "complete the quiz another time: ")
+    ```
 
 ### Known Bugs
 - **Correct answer bug** – if a user chose the incorrect answer, the program should tell them what the correct answer was. There was a bug where the correct answer wasn’t displaying correctly, with parentheses and commas. This bug still exists, so I have removed the need to show the full value of the correct answer, instead ony showing the initial a,b or c until a fix can be found
 
 ![Correct Answer bug](./assets/documentation/images/correct_answer_bug.jpg)
-
-- **Proceed if N Bug** - when the user is first asked if they'd like to proceed, and they answer N, a warning is shown to tell them it is a mandatory quiz and they must complete it before their deadline. The question of proceeding(y/n) is then displayed again. If they answer N again, the quiz still commences.
 
 ## Deployment
 The project was deployed on Heroku using the following method:

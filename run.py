@@ -119,21 +119,14 @@ def start_quiz():
     # entered above
     begin_quiz = input(f"Are you ready to begin, {NAME}? (y/n): ")
 
-    while begin_quiz not in ["y", "n"]:
-        begin_quiz = input(f"Are you ready to begin, {NAME}? (y/n): ")
+    while begin_quiz != "y":
+        begin_quiz = input(f"Please enter 'y' to begin {NAME}, else "
+                           "complete the quiz another time: ")
 
     if begin_quiz.lower() == "y":
         print("\nOkay, let's start. Good luck!\n")
         time.sleep(1)
         os.system('cls' if os.name == 'nt' else 'clear')
-    elif begin_quiz.lower() == "n":
-        print("This quiz is mandatory for all trainees. Please complete it "
-              "before your assigned deadline.")
-        begin_quiz = input(f"Are you ready to begin, {NAME}? (y/n): \n")
-        time.sleep(1)
-        os.system('cls' if os.name == 'nt' else 'clear')
-    else:
-        print("Please select either y or n.")
 
 
 # run_quiz function based on project by Leah Fisher
