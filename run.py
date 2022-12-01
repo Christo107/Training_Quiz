@@ -1,6 +1,7 @@
 """
 Imports to use gspread for tracking trainee names and scores
 Import os for clearing screen to help with user experience
+Import time to add pauses at certain points during the quiz
 """
 import os
 import time
@@ -143,15 +144,16 @@ def run_quiz(data):
         user_answer = ""
         correct_answer = entry['correct_answer']
 
+# this loop repeats the question until the user enters either a, b or c
         while user_answer not in ['a', 'b', 'c']:
             print(f"{entry['question']}\n")
-
+# this code prints the 3 options for each question
             for key, value in entry['answers'].items():
                 print(f"{key}: {value}")
 
             user_answer = input("Answer(a, b or c): \n")
             user_answer = user_answer.lower()
-
+# this code checks if the answer is correct and adds a point to the score
         if user_answer == entry['correct_answer']:
             print(f"That's correct {NAME}! Well done\n")
             score = score + 1
@@ -159,14 +161,14 @@ def run_quiz(data):
             print("---------------------------------------")
             time.sleep(3)
             os.system('cls' if os.name == 'nt' else 'clear')
-
+# this code displays the correct answer if the user enters the wrong answer
         elif user_answer != entry['correct_answer']:
             print(f"Sorry {NAME}, that's incorrect.\n")
             print(f"The correct answer was {correct_answer}.")
             print("---------------------------------------")
             time.sleep(3)
             os.system('cls' if os.name == 'nt' else 'clear')
-
+# the final screen congratulates the trainee and tells them their final score
     print(f"Well done for completing the training quiz, {NAME}.\n")
     print(f"Your total score was {score} points.\n")
     print("Thank you and have a nice day.")
@@ -174,6 +176,7 @@ def run_quiz(data):
     export_results(data)
 
 
+# Export results based on Love Sandwiches project by CI
 def export_results(data):
     """
     This function will export the results of the quiz including
