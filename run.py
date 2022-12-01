@@ -94,6 +94,8 @@ def start_quiz():
     Beginning of quiz, includes welcome message, gets trainee's name and
     shows instructions for quiz
     """
+    print("PROGRESSION MODULE TRAINING QUIZ\n")
+
     global NAME
     NAME = input("Hi trainee, please enter your name and hit enter:\n")
 
