@@ -74,6 +74,7 @@ The live website on Heroku can be accessed at the following link: [View my Live 
 - Future improvements will include logging the incorrect answers of the trainee for the teacher to identify areas that need improvement.
 
 ## User Experience
+A number of features have been added to improve the user experience while using the app. These include adding a pause between lines of text appearing to avoid bombarding the user with too information at one time. Also, the screen is cleared after the introduction and after each question, to de-clutter the interface for the user. The user is asked whether they would like to proceed with the quiz rather than starting automatically.
 ### User Stories
 #### Client Goals
 - As a trainer/teacher, I want to be able to keep a log of the trainees who have completed the quiz, so I can follow up with any who haven't yet.
@@ -88,7 +89,7 @@ The live website on Heroku can be accessed at the following link: [View my Live 
 - As a trainee, I want to be able to understand what the quiz consists of, so I know how long it will take
     * I tested that the instructions for the quiz are displayed each time a trainee begins the quiz. **Passed**
 - As a trainee, I want to be able to proceed when I am ready, so I can be prepared to answer the questions
-    * I tested that the trainee can only proceed if they answer Y to the "ready to proceed" question. **Failed** (see [Proceed if N bug](#known-bugs) below)
+    * I tested that the trainee can only proceed if they answer Y to the "ready to proceed" question. **Passed**
 - As a trainee, I want to be able to see which questions I get wrong, so I know what I need to study more
     * I tested that the incorrect answers are flagged to the user as they go through the quiz. **Passed**
 - As a trainee, I want to be able to see my final score, so I know how I did in the quiz
@@ -96,6 +97,8 @@ The live website on Heroku can be accessed at the following link: [View my Live 
 
 ## Design
 - The design of the quiz is simple and straightforward in nature. How the quiz is to be used did not require any visual image elements, and these would be a distraction for the trainee. I wanted to first provide instructions to the user so they understood what was required of them to complete the quiz. also, where errors could be made, I wanted to provide feedback to guide back to where they should be.
+- The code uses a loop to iterate through the questions and answers. If the question bank needs to be expanded in future, a separate file may be created to store these.
+- To make completing the quiz a more pleasant experience, pauses have been added at specific points, and the screen is cleared down to avoid "option paralysis"
 
 ### Process Flow
 Below is a flow chart to demonstrate the actions that take place while using the app
