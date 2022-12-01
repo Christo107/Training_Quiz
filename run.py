@@ -26,7 +26,7 @@ SHEET = GSPREAD_CLIENT.open('chris_python_quiz')
 NAME = ""
 SCORE = 0
 
-# quiz questions for training quiz
+# dictionary of quiz questions for training quiz
 quiz_data = [
     {"question": "1. What does the term Progression mean in grant assessment?",
      "answers": {"a": "moving forward in your education",
